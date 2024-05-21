@@ -1,6 +1,7 @@
 # Website drogueria
 
-https://scontent.fbog10-1.fna.fbcdn.net/v/t39.30808-6/296472067_100796786074604_4485182194976917864_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xndx2tMGiuIQ7kNvgH9A85l&_nc_ht=scontent.fbog10-1.fna&oh=00_AYD2yfgqAQ4fGZKSibK_sr7derwfcZSZBGwTjF1zDsKvow&oe=66530AB2 
+![image](https://github.com/Xhall1/Website_drogueria/assets/114125924/8d1a365d-b00e-4fb4-9e2a-045758551407)
+
 
 Este proyecto tiene como objetivo proporcionar una plataforma en línea para que clientes puedan explorar y comprar productos farmacéuticos.
 
