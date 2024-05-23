@@ -10,10 +10,12 @@ export default {
       colors:{
         primary: "#3abeb9",
         secondary: "#3abeb9",
+        third: "#338AAE",
         brandYellow: "#fdc62e",
         brandGreen: "#2dcc6f",
         brandBlue: "#1376f4",
         brandWhite: "#eeeeee",
+
       },
       container:{
         center:true,
