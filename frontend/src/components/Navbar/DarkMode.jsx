@@ -1,6 +1,6 @@
 import React from "react";
-import LightButton from "C:/Users/Personal/Desktop/PaginaWebDroguria/Website_drogueria/frontend/src/assets/website/light-mode-button.png";
-import DarkButton from "C:/Users/Personal/Desktop/PaginaWebDroguria/Website_drogueria/frontend/src/assets/website/dark-mode-button.png";
+import LightButton from "../../assets/website/light-mode-button.png";
+import DarkButton from "../../assets/website/dark-mode-button.png";
 
 const DarkMode = () => {
     const [theme, setTheme] = React.useState(localStorage.getItem("theme")? localStorage.getItem("theme") : "light");

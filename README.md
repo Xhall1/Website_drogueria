@@ -17,7 +17,11 @@ Este proyecto tiene como objetivo proporcionar una plataforma en línea para que
 - HTML5
 - CSS3
 - JavaScript
-- 
+
+## FrameWorks Utilizados
+- React
+- Tailwind
+
 ## Cómo Clonar el Repositorio
 
 Para clonar este repositorio y trabajar en él localmente, sigue estos pasos:
