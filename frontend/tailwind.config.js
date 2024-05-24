@@ -15,6 +15,8 @@ export default {
         brandGreen: "#2dcc6f",
         brandBlue: "#1376f4",
         brandWhite: "#eeeeee",
+        brandRed: "#D61818",
+        brandPurple: "#851FFF",
 
       },
       container:{
