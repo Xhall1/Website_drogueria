@@ -11,18 +11,21 @@ const BlogData = [
         subtitle: "Subtitulo corto de la noticia 1",
         published: "Fecha publicacion",
         image: Img1,
+        aosDelay: "0",
     },
     {
         title: "Titulo noticia 2",
         subtitle: "Subtitulo corto de la noticia 2",
         published: "Fecha publicacion",
         image: Img2,
+        aosDelay: "200",
     },
     {
         title: "Titulo noticia 3",
         subtitle: "Subtitulo corto de la noticia 3",
         published: "Fecha publicacion",
         image: Img3,
+        aosDelay: "400",
     },
 ]
 
@@ -37,7 +40,7 @@ const Blogs = () => {
                 {/* Blog card */}
                 {
                     BlogData.map((data) => (
-                        <div key={data.title} className="bg-white dark:bg-gray-900">
+                        <div data-aos="fade-up" data-aos-delay={data.aosDelay} key={data.title} className="bg-white dark:bg-gray-900">
                             {/* Image section */}
                             <div className="overflow-hidden rounded-2xl mb-2">
                                 <img src={data.image} alt=""  className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500"/>
