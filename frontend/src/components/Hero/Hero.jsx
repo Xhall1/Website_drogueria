@@ -1,3 +1,4 @@
+import React from "react";
 import Slider from "react-slick";
 import Image1 from "../../assets/drogas/acetaminofen.png";
 import Image2 from "../../assets/drogas/loratadina.png";
@@ -8,41 +9,44 @@ const HeroData = [
     {
         id: 1,
         img: Image1,
-        subtitle: "Subtitulo Producto 1",
-        title: "Titulo Producto 1",
+        subtitle: "Lleva ",
+        title: "Ahora",
         title2: "Acetaminofen",
+        link: "https://www.facebook.com/messages/t/363551983504889"
     },
     {
         id: 2,
         img: Image2,
-        subtitle: "Subtitulo Producto 2",
-        title: "Titulo Producto 2",
+        subtitle: "Lleva",
+        title: "Ahora",
         title2: "Loratadina",
+        link: "https://www.facebook.com/messages/t/363551983504889"
     },
     {
         id: 3,
         img: Image3,
-        subtitle: "Subtitulo Producto 3",
-        title: "Titulo Producto 3",
+        subtitle: "Lleva",
+        title: "Ahora",
         title2: "Naproxeno",
+        link: "https://www.facebook.com/messages/t/363551983504889"
     },
 ]
 
 const Hero = () => {
   const settings = {
     dots: false,
-    arrows: false,
+    arrows: true, 
     infinite: true,
-    speed: 800,
+    speed: 1500,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 4000,
+    autoplay: true, 
+    autoplaySpeed: 4500,
     cssEase: "ease-in-out",
-    pauseOnHover: false,
+    pauseOnHover: true,
     pauseOnFocus: true,
   };
     
-    return (
+  return (
     <div className="container">
         <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color
         flex justify-center items-center">
@@ -60,12 +64,13 @@ const Hero = () => {
                                     <h1 data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className="text-5xl uppercase text-white dark:text-white/5 sm:text-[80px] 
                                     md:text-[100px] xl:text-[100px] font-bold">{data.title2}</h1>
                                     <div data-aos="fade-up" data-aos-offset="0" data-aps-duration="500" data-aos-delay="300">
-                                        <Button 
-                                        text="Comprar ahora" 
-                                        bgColor="bg-primary" 
-                                        textColor="text-white"
-                                        
-                                        />
+                                        <a href={data.link} target="_blank" rel="noopener noreferrer">
+                                            <Button 
+                                            text="Comprar ahora" 
+                                            bgColor="bg-primary" 
+                                            textColor="text-white"
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                                 {/*Img Section*/}
@@ -88,4 +93,4 @@ const Hero = () => {
   );
 };
 
-export default Hero
+export default Hero;

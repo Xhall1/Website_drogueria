@@ -40,7 +40,7 @@ const Footer = () => {
                     <p className="text-gray-500 mt-4">
                         Solo queremos cuidar tu salud ❤️❤️❤️
                     </p>
-                    <a href="https://www.facebook.com/people/Drogueria-MultiServicios-El-Estrecho/100084100756561/"
+                    <a href="https://www.facebook.com/people/Droguer%C3%ADa-Multiservicios/61560342563681/"
                     target="_blank" className="inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full">
                         Visita nuestra página de Facebook
                     </a>
@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                     {/* Second col Links */}
                     <div className="py-8 px-4">
-                        <h1 className="text-xl font-bold sm:text-left mb-3">Quick Links</h1>
+                        <h1 className="text-xl font-bold sm:text-left mb-3">Redes Sociales</h1>
                         <ul className="space-y-3">
                             {
                                 FooterLinks.map((data, index) => (
@@ -95,7 +95,7 @@ const Footer = () => {
                                     <a href="#">
                                         <FaInstagram className="text-3xl hover:text-primary duration-300" />
                                     </a>
-                                    <a href="https://www.facebook.com/people/Drogueria-MultiServicios-El-Estrecho/100084100756561/" target="_blank">
+                                    <a href="https://www.facebook.com/people/Droguer%C3%ADa-Multiservicios/61560342563681/" target="_blank">
                                         <FaFacebook className="text-3xl hover:text-primary duration-300" />
                                     </a>
                                     <a href="#">

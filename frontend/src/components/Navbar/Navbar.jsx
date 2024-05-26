@@ -2,12 +2,13 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
+import { Link } from "react-router-dom"; 
 
 const MenuLinks = [
   {
     id: 1,
     name: "Inicio",
-    link: "/#",
+    link: "/",
   },
   {
     id: 2,
@@ -17,12 +18,12 @@ const MenuLinks = [
   {
     id: 3,
     name: "Sobre nosotros",
-    link: "/#about",
+    link: "/about-us",
   },
   {
     id: 4,
     name: "Fanpage",
-    link: "https://www.facebook.com/profile.php?id=100084100756561",
+    link: "https://www.facebook.com/people/Droguer%C3%ADa-Multiservicios/61560342563681/",
   },
 ];
 
@@ -30,18 +31,14 @@ const DropdownLinks = [
   {
     id: 1,
     name: "Facebook",
-    link: "https://www.facebook.com/profile.php?id=100084100756561",
+    link: "https://www.facebook.com/people/Droguer%C3%ADa-Multiservicios/61560342563681/",
   },
   {
     id: 2,
     name: "Whatsapp",
     link: "/#",
   },
-  {
-    id: 3,
-    name: "TikTok",
-    link: "/#",
-  },
+
 ];
 
 const Navbar = () => {
@@ -51,39 +48,39 @@ const Navbar = () => {
         <div className="container flex justify-between items-center">
           {/* Logo and Links section */}
           <div className="flex items-center gap-4">
-            <a
-              href="#"
-              className="text-primary font-semibold tracking-widest text-xl uppercase sm:text-20rem"
-            >
+            <Link to="/" className="text-primary font-semibold tracking-widest text-xl uppercase sm:text-20rem">
               Drogueria Multiservicios
-            </a>
+            </Link>
             {/* Menu Items */}
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
                 {MenuLinks.map((data, index) => (
                   <li key={index}>
-                    <a
-                      href={data.link}
-                      className="inline-block px-2 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      {data.name}
-                    </a>
+                    {data.link.startsWith("http") ? (
+                      <a
+                        href={data.link}
+                        className="inline-block px-2 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {data.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={data.link}
+                        className="inline-block px-2 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200"
+                      >
+                        {data.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
                 {/* Dropdown */}
                 <li className="relative cursor-pointer group">
-                  <a
-                    href="#"
-                    className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
-                  >
-                    Quick Links
-                    <span>
-                      <FaCaretDown className="group-hover:rotate-180 duration-300" />
-                    </span>
-                  </a>
+                  <span className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2">
+                    Redes Sociales
+                    <FaCaretDown className="group-hover:rotate-180 duration-300" />
+                  </span>
                   {/* Dropdown Links */}
                   <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 text-black dark:text-white">
                     <ul className="space-y-2">
