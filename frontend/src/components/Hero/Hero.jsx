@@ -64,6 +64,7 @@ const Hero = () => {
                                         text="Comprar ahora" 
                                         bgColor="bg-primary" 
                                         textColor="text-white"
+                                        
                                         />
                                     </div>
                                 </div>

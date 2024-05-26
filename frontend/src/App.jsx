@@ -1,4 +1,5 @@
 
+
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Category from "./components/Category/Category";
@@ -9,6 +10,9 @@ import Image1 from "./assets/drogas/azitromicina.png";
 import Image2 from "./assets/product/p-7.png"
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
+import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
+
 
 const BannerData={
   discount: "30% DE DESCUENTO",
@@ -35,6 +39,7 @@ const BannerData2={
 };
 
 const App = () => {
+
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
       <Navbar />
@@ -46,6 +51,8 @@ const App = () => {
       <Products />
       <Banner data={BannerData2}/>
       <Blogs />
+      <Partners />
+      <Footer />
     </div>
   );
 };
